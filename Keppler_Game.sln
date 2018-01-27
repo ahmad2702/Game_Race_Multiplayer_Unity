@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keppler_Game", "Keppler_Game.csproj", "{C0AB25FB-0EB0-AA5F-7133-9B9CB573F902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keppler_Game.Plugins", "Keppler_Game.Plugins.csproj", "{6E077A1F-51CF-E596-C79A-B76098A15DAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keppler_Game.Editor.Plugins", "Keppler_Game.Editor.Plugins.csproj", "{1D17D436-B15F-4566-E793-7FC9D20F1BAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keppler_Game.Editor", "Keppler_Game.Editor.csproj", "{7C485620-0DDE-023B-9224-E66480413D40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0AB25FB-0EB0-AA5F-7133-9B9CB573F902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0AB25FB-0EB0-AA5F-7133-9B9CB573F902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0AB25FB-0EB0-AA5F-7133-9B9CB573F902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0AB25FB-0EB0-AA5F-7133-9B9CB573F902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E077A1F-51CF-E596-C79A-B76098A15DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E077A1F-51CF-E596-C79A-B76098A15DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E077A1F-51CF-E596-C79A-B76098A15DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E077A1F-51CF-E596-C79A-B76098A15DAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D17D436-B15F-4566-E793-7FC9D20F1BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D17D436-B15F-4566-E793-7FC9D20F1BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D17D436-B15F-4566-E793-7FC9D20F1BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D17D436-B15F-4566-E793-7FC9D20F1BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C485620-0DDE-023B-9224-E66480413D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C485620-0DDE-023B-9224-E66480413D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C485620-0DDE-023B-9224-E66480413D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C485620-0DDE-023B-9224-E66480413D40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
