@@ -24,13 +24,13 @@ public class Gui_Label : MonoBehaviour
 
     void Update()
     {
-        if (!currentGame.isGameOver())
+        if (!currentGame.IsGameOver())
         {
             currentTimeOnScreen -= Time.deltaTime;
             if (currentTimeOnScreen < 0)
             {
                 currentTimeOnScreen = TIMER_IN_SECOND;
-                currentGame.resetPlayerScore();
+                currentGame.ResetPlayerScore();
             }
         }
     }
@@ -40,7 +40,7 @@ public class Gui_Label : MonoBehaviour
      */
     private void OnGUI()
     {
-        if (!currentGame.isGameOver())
+        if (!currentGame.IsGameOver())
         {
             GUI.Label(new Rect(200, 15, 150, 25), "Time Left: " + Mathf.Round(currentTimeOnScreen));
         }
@@ -53,7 +53,7 @@ public class Gui_Label : MonoBehaviour
 
 
 
-    public float getTimeForPlayers()
+    public float GetTimeForPlayers()
     {
         return currentTimeOnScreen;
     }

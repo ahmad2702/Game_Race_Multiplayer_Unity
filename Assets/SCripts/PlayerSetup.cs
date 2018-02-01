@@ -30,7 +30,7 @@ public class PlayerSetup : NetworkBehaviour
         transform.name = newPlayerName;
         newNumberForPlayer++;
 
-        currentGame.createNewPlayerWithScore(newPlayerName, 0);
+        currentGame.CreateNewPlayerWithScore(newPlayerName, 0);
         //screenText.GetComponent<Text> ().text = newPlayerName + " : " + 0 + " ";
     }
 

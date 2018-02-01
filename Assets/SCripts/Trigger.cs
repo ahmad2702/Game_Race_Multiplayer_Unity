@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-  /*
-   * @autors Sadullaev A. & Prakhov K.
-   * Die Klasse Trigger wurde im Rahmen CG WS17 implementiert.
-   */
+/*
+ * @autors Sadullaev A. & Prakhov K.
+ * Die Klasse Trigger wurde im Rahmen CG WS17 implementiert.
+ */
 
 public class Trigger : MonoBehaviour
 {
-   /*
-    *Referenz auf TextGameObject, wo die Score von Player ausgegeben werden
-    */
+    /*
+     *Referenz auf TextGameObject, wo die Score von Player ausgegeben werden
+     */
     public GameObject scoreText;
     /*
      * Constante für die Checkpoint, die für den Gewinn notwendig sind
@@ -44,7 +44,7 @@ public class Trigger : MonoBehaviour
      */
     private void Update()
     {
-        displayScoresOnScreen();
+        DisplayScoresOnScreen();
     }
 
     /*
@@ -80,7 +80,7 @@ public class Trigger : MonoBehaviour
         currentPlayer = col.transform.parent.parent.name;
 
         string triggerFigureName = gameObject.name;
-        
+
         if (!gameOver)
         {
             if (triggerFigureName.Contains("Cube"))
@@ -92,16 +92,16 @@ public class Trigger : MonoBehaviour
 
 
                 // UPDATE 
-                updatePlayerScore(currentPlayer);
+                UpdatePlayerScore(currentPlayer);
 
-                displayScoresOnScreen();
+                DisplayScoresOnScreen();
 
             }
 
             if (triggerFigureName.Contains("Finish"))
             {
                 Gui_Label gui_Label = new Gui_Label();
-                float currentTimeOnTimer = gui_Label.getTimeForPlayers();
+                float currentTimeOnTimer = gui_Label.GetTimeForPlayers();
 
                 int playerScore = 0;
                 for (int i = 0; i < players.Count; i++)
@@ -125,7 +125,7 @@ public class Trigger : MonoBehaviour
 
             if (triggerFigureName.Contains("PlayerStartPosition"))
             {
-                displayScoresOnScreen();
+                DisplayScoresOnScreen();
             }
 
         }
@@ -136,7 +136,7 @@ public class Trigger : MonoBehaviour
     /*
      * Die Points bei jedem Player werden initialisiert/updaded/gespeichert
      */
-    private void updatePlayerScore(string playerName)
+    private void UpdatePlayerScore(string playerName)
     {
         bool playerIsFoundInList = false;
 
@@ -156,14 +156,14 @@ public class Trigger : MonoBehaviour
 
         if (players.Count == 0 || !playerIsFoundInList)
         {
-            createNewPlayerWithScore(playerName, 1);
+            CreateNewPlayerWithScore(playerName, 1);
         }
     }
 
     /*
      * Der neuer Player wird erstellt
      */
-    public void createNewPlayerWithScore(string playerName, int score)
+    public void CreateNewPlayerWithScore(string playerName, int score)
     {
         string[] data = new string[2];
         data[0] = playerName;
@@ -176,7 +176,7 @@ public class Trigger : MonoBehaviour
     /*
      * Die Scorespoints werden zurückgesetzt
      */
-    public void resetPlayerScore()
+    public void ResetPlayerScore()
     {
         for (int i = 0; i < players.Count; i++)
         {
@@ -188,7 +188,7 @@ public class Trigger : MonoBehaviour
     /*
      * Die Scorespoints werden ausgegeben
      */
-    public void displayScoresOnScreen()
+    public void DisplayScoresOnScreen()
     {
         string screenText = "";
         for (int i = 0; i < players.Count; i++)
@@ -200,12 +200,12 @@ public class Trigger : MonoBehaviour
     /*
      * Getters
      */
-    public GameObject getTextScreen()
+    public GameObject GetTextScreen()
     {
         return scoreText;
     }
 
-    public bool isGameOver()
+    public bool IsGameOver()
     {
         return gameOver;
     }
@@ -213,9 +213,9 @@ public class Trigger : MonoBehaviour
     /*
      * Prüefe, ob die Liste null ist
      */
-    public bool isPlayerListNotNull()
+    public bool IsPlayerListNotNull()
     {
-        if(players.Count != 0)
+        if (players.Count != 0)
         {
             return true;
         }

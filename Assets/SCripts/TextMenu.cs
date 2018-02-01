@@ -21,7 +21,7 @@ public class TextMenu : MonoBehaviour {
         "4. Sollte die erste drei Aufgaben nicht erfüllt werden,\n" +
         "   wird sowohl die Anzahl des gesammelten Collectables\n" +
         "   als auch das Zeitlimit zurückgesetzt\n\n" +
-        " Türkisblaues Checkpoint = Collectable; Oranges/Schwarzes Checkpoint = Finish";
+        " Türkisblaues Checkpoint > Collectable; Orange/Schwarze Wand > Finish";
 
     Trigger currentGame = new Trigger();
 
@@ -32,7 +32,7 @@ public class TextMenu : MonoBehaviour {
 
     private void OnGUI()
     {
-        if (!currentGame.isPlayerListNotNull())
+        if (!currentGame.IsPlayerListNotNull())
         {
             GUI.contentColor = Color.black;
             GUI.backgroundColor = Color.black;
